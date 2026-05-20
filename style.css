@@ -3,12 +3,12 @@ body{
 }
 
 .hero-section{
-    background: #f8f8f8;
+    background: grey;
     padding: 80px 0;
 }
 
 .hero-section h1{
-    color: #222;
+    color: white;
 }
 
 .btn-danger{
@@ -34,6 +34,14 @@ body{
     position: relative;
 }
 
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+
+    transform: translateY(-100px);
+}
+
 .hero-section::before{
     content: '';
     position: absolute;
@@ -43,11 +51,58 @@ body{
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.4);
+    background: rgba(255,255,255,0.1);
 }
 
 .hero-content{
     position: relative;
     z-index: 2;
     max-width: 600px;
+}
+
+.product-categories{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.category{
+    font-size: 25px;
+    font-weight: 300;
+    color: #ff4d6d;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.active-category::after{
+    content: '';
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #ff4d6d;
+}
+
+.customers-section{
+    background: #f8f8f8;
+}
+
+.customer-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.customer-img:hover{
+    transform: scale(1.05);
 }
