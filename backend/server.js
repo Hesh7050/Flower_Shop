@@ -13,8 +13,8 @@ app.get("/", (req, res) => {
     res.send("Flower Shop API Running");
 });
 
-app.listen(5000, () => {
-    console.log("Server Running on Port 5000");
+app.listen(5002, () => {
+    console.log("Server Running on Port 5002");
 
 
 
