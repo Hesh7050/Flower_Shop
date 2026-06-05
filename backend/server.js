@@ -15,4 +15,12 @@ app.get("/", (req, res) => {
 
 app.listen(5000, () => {
     console.log("Server Running on Port 5000");
+
+
+
+    app.post("/test", (req, res) => {
+        res.json({
+            message: "POST is working"
+        });
+    });
 });
