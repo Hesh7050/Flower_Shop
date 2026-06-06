@@ -851,5 +851,5 @@ body {
 
 .btn-outline-danger:hover {
   background-color: var(--crimson) !important;
-  color: #fff !important;
+  color: black !important;
 }
